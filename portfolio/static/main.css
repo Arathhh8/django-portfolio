@@ -1,0 +1,33 @@
+body {
+    background: #090909;
+}
+.bg-black {
+    background: aliceblue;
+}
+
+.card-project:hover {
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.border-personal {
+    border-color: aqua;
+}
+
+.bg-contact {
+    background-image: url(./portfolio/contact_arath.jpg);
+    background-position: center;
+}
+.bg-header-contact {
+    background-image: url(./portfolio/contact_arath.jpg);
+    width: 1024px;
+    height: 768px;
+}
+.custom-img-contact {
+    opacity: 0.4;
+}
+.container-bg-contact {
+    background-image:  url(./portfolio/contact_arath.jpg);
+    width: 1024px;
+    height: 768px;
+    opacity: 0.4;
+}

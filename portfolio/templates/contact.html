@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+<form action="/contact/" method="POST">{% csrf_token %}
+
+    <div class="container p-4">
+
+        <div class="row">
+            <div class="col">
+                <img class="img-fluid" style="opacity: 0.4;" src="{% static 'portfolio/contact_arath.jpg' %}" alt="">
+                <p class="h2 text-center" style="color: aqua;">Hola, te gustaría contactarme?</p>
+            </div>
+        </div>
+        <div class="row align-items-center p-2">
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col">
+                        <section class="mb-3 px-5 px-md-6">
+                            <label for="formGroupExampleInput" class="form-label">Your name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput"
+                                placeholder="Type your name here" , name="asunto">
+                        </section>
+                        <section class="mb-3 px-5">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" name="email">
+                            <div id="emailHelp" class="form-text d-none d-sm-block">I'll never share your email with
+                                anyone else.</div>
+                        </section>
+                        <section class="form-floating mb-3 px-5">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                                name="mensaje"></textarea>
+                            <label for="floatingTextarea" class="px-5"
+                                style="color: rgb(108, 104, 104);">Comments</label>
+                        </section>
+                        <section class="mb-3 px-5 text-end">
+                            <button type="submit" class="btn btn-primary my-2">Submit</button>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <h2 class="mb-3 px-5 text-center">Estoy muy entusiasmado por recibir tu correo.</h2>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+    {% endblock %}

@@ -1,0 +1,87 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<header class="row bg-black">
+    <div class="col-md-3 col-sm-6 col-4 my-auto">
+        <img src="{% static 'portfolio/Arath_profile.jpg' %}" class="img-fluid img-thumbnail rounded-circle color-primary rounded-primary" alt="">
+    </div>
+    <div class="col-md-9 col-sm-6 col-8 my-auto">
+        <h3 class="text-center"><strong>Hola!</strong></h3>
+        <h1 class="text-center" style="color: aqua;">Soy Arath García</h1>
+        <h2 class="text-center fs-5">Ingeniero Electrónico con especialidad en Sistemas Embebidos</h2>
+    </div>
+</header>
+
+<div class="container px-4 my-4">
+    <div class="row gx-5">
+        <div class="col-md-8 my-4">
+            <div class="p-3">
+                <h5 style="color: aqua;">Sobre mí</h5>
+                <p class="text-md-100">Actualmente me encuentro en el último semestre de Ingeniería Electrónica y busco realizar mis prácticas profesionales en una empresa que me permita desarrollar mis habilidades en el área del desarrollo de tecnología, mantenimiento, control, o cualquier área a fin a la electrónica y programación.</p>
+                <h5 style="color: aqua;">Gustos personales</h5>
+                <p>Soy apacionado al fútbol, los videjuegos, y todo lo que tenga que ver con tecnología. También me considero una persona autodidacta y me gusta trabajar en equipo.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 my-4">
+            <div class="p-3 border bg-black">
+                <h5 style="color: aqua;">Lenguajes y habilidades</h5>
+                <div class="d-flex justify-content-start align-items-center my-4">
+                    <div class="spinner-grow spinner-grow-sm" role="status">
+                    </div>
+                    <div class="ms-3">
+                        C
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center my-4">
+                    <div class="spinner-grow spinner-grow-sm" role="status">
+                    </div>
+                    <div class="ms-3 hola">
+                        HTML5 y CSS3
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center my-4">
+                    <div class="spinner-grow spinner-grow-sm" role="status">
+                    </div>
+                    <div class="ms-3">
+                        Python
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center my-4">
+                    <div class="spinner-grow spinner-grow-sm" role="status">
+                    </div>
+                    <div class="ms-3">
+                        Kotlin
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="row my-4 text-center">
+    
+    <h3>My Projects</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero unde, nulla vel deleniti dolore tenetur praesentium at atque ut impedit?</p>
+
+    {% for project in projects %}
+        <div class="col-md-4 p-4 my-auto">
+            <div class="card bg-black card-project" style="height: 500px;">
+                <div class="card-body">
+                    <img src="{{project.image.url}}" alt="{{project.title}}" class="img-fluid">
+                    <h2>{{project.title}}</h2>
+                    <p>{{project.description}}</p>
+
+                    {% if project.url %}
+                    <a href="{{project.url}}" class="btn btn-light rounded-0 btn-sm my-auto" target="_blank">{{project.url}}</a>
+            
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div> -->
+
+{% endblock %}
